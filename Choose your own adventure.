@@ -1,0 +1,984 @@
+#THE ROUTES ARE ORDERED FROM BOTTOM UP SO ROUTE START WILL APPEAR BEFORE ENDINGS IN THE CODE (Since i made it call the routes as functions.)
+
+import time,sys,random          #function that prints letters one at a time to make them look like it is slowly showing text
+def print_slow(str):
+    for letter in str:                  #Creates a loop which reads over each character
+        sys.stdout.write(letter)        #Prints the characters one by one in the terminal without adding a new line, so it forms the word
+        sys.stdout.flush()              #The flush command instantly forces the output to be written into the terminal immediately to ensure all characters are displayed as they are written
+        time.sleep(0.015)               #Value that controls the second delay before each letter will be inputted into the terminal
+
+print_slow("BOMB BOMB BOMB")
+print(" ")
+time.sleep(1.0)
+print_slow("...")
+time.sleep(1.0)
+print(" ")
+print_slow("This game requires an input to advance text. NOTE: DON'T SPAM ENTER. (Press enter to continue.)")
+input(" ")       
+name_user = input("(PLEASE INSERT YOUR NAME): ")
+        #This makes the user repeat their name if they accidentally input " " a space this can only be a failsafe once.
+if name_user == (""):
+    name_user = input("(PLEASE INSERT YOUR NAME): ")
+    print(" ")    
+#---------------------------------------------------------------------------------------------------------------------------BEGIN ROUTE 2a (ENDING 5)                                                 
+def route_2a_ending1():
+    print_slow("(Morgana) I wouldn't steal from a corpse if I were you... Oh whatever.")
+    input(" ")
+    print_slow("You continue to follow Morgana into the dungeon.")
+    input(" ")
+    print_slow("(Morgana) Hey, what is someone like you doing in such a dangerous place like this? You would've been in big trouble if It weren't for me!")
+    input(" ")
+    print_slow("("+name_user+")" + " I'm not sure what I'm doing here, but thanks for saving me.")
+    input(" ")
+    print_slow("(Morgana) You're quite the peculiar one aren't ya?...")
+    input(" ")
+    print_slow("(Morgana) Hold on, there's a gate up ahead!")
+    input(" ")
+    print_slow("You reach the gate and realize it's locked.")
+    input(" ")
+    print_slow("(Morgana) Hey wait, didn't you find a key earlier? Why don't you try unlocking it?")
+    input(" ")
+    print_slow("You insert the key you found earlier.")
+    input(" ")
+    for i in range(4):
+        print_slow("*RUMBLE*")
+        print(" ")
+    print_slow("The gate opens, revealing a corridor filled to the brim with GVT.")
+    input(" ")
+    print_slow("(Morgana) Looks like its time to show you what I've got!")
+    input(" ")
+    print_slow("(Morgana) COME! ZORRO!")
+    input(" ")
+    print_slow("A large shadow appears over Morgana.")
+    input(" ")
+    print_slow("(Morgana) This is my power, my persona! Leave it to me!")
+    input(" ")
+    MorganaGVTfight0 = 12
+    MorganaGVTfightkill0_count = 0
+    while MorganaGVTfightkill0_count < 4:   
+        MorganaGVTfightkill0 = input("Press enter to use GARU: ")
+        if MorganaGVTfightkill0 == (""):   
+            MorganaGVTfight0 -= 3      
+            print("We took down 3 enemies! Only " + str(MorganaGVTfight0) + " more to go!")
+            MorganaGVTfightkill0_count += 1 
+        if MorganaGVTfight0 == 3:           #This inputs dialogue when there are 3 enemies remaining by checking the value
+            print_slow("(Morgana) Urgh, these last three sure are tough, let's give it all we've got!")
+            print(" ")
+        if MorganaGVTfight0 <= 0:        
+            break
+    print_slow("All the enemies covering your path have been defeated.")
+    input(" ")
+    print_slow("(Morgana) Heh, didn't even break a sweat, hey you! Let's get outta here!")
+    input(" ")
+    print_slow("You and Morgana exit the dungeon through an elevator.")
+    input(" ")
+    print_slow("Morgana sees potential in you, and you join his crew, working to save the world from political corruption.")
+    input(" ")
+    for i in range(5):
+        print_slow("...")
+        input(" ")
+    print(" ")
+    print_slow("ENDING 5: THE PHANTOM THIEVES")
+    input(" ")
+    print(" ")
+    print_slow("Would you like to restart the game?")
+    restart_game = input("(yes/no): ")
+    while restart_game not in ["yes", "no"]:
+        restart_game = input("(yes/no): ")
+    if restart_game == ("yes"):
+        select_start_or_route()
+    else:
+         print_slow("Have a good day.")
+
+#----------------------------------------------------------------------------------------------------------------------------BEGIN ROUTE 2a (ENDING 6)
+def route_2a_ending2():
+    print_slow("You decide against stealing the corpse's possessions and continue on with Morgana.")      ##########you find lock gate with morgana however no key so you somehow meet 4 again. fight
+    input(" ")
+    print_slow("(Morgana) So what's your deal? What're you doin' here?")
+    input(" ")
+    print_slow("("+name_user+")" + " I got dragged into some mess- Hey is that a gate up ahead?")
+    input(" ")
+    print_slow("You and Morgana approach the gate, but it's locked.")
+    input(" ")
+    print_slow("(Morgana) Ah the door is locked shut...")
+    input(" ")
+    print_slow("(Morgana) Hey, it looks like there's a crawlspace in the wall. Let's go through there, but take this gun, you might need it.")
+    input(" ")
+    print_slow("You and Morgana crawl through the crawlspace, and find yourselves in a large atrium.")
+    input(" ")
+    print_slow("The room is filled with corpses upon corpses, stacked onto eachother.")
+    input(" ")
+    print_slow("(???) Ah so thats where you are.")
+    input(" ")
+    print_slow("("+name_user+")" + " Huh..?")
+    input(" ")
+    print_slow("(4) You forgot me already? It's 4.")
+    input(" ")
+    print_slow("*BANG* 4 unholsters his rifle and fires at Morgana.")
+    input(" ")
+    print_slow("You look to your side but Morgana had already disappeared.")
+    input(" ")
+    print_slow("(4) Anyways, now that the problem is dealt with... Why don't you and I have a little chat?")
+    input(" ")
+    print_slow("4 grins beneath his mask.")
+    input(" ")
+    attack4_r2e = input("Kill 4. (yes/no): ")
+    while attack4_r2e not in ["yes","no"]:
+        attack4_r2e = input("Kill 4. (yes/no): ")
+    if attack4_r2e == ("no"):
+        attack4_r2e = input("KILL 4. (yes/yes): ")
+        while attack4_r2e not in ["yes"]:
+            attack4_r2e = input("KILL 4. (yes/yes): ")
+    if attack4_r2e ==("yes"):
+        print_slow("You grab the gun that Morgana left behind and point it at 4.")
+        input(" ")
+    print_slow("(4) So you want to kill me huh? I thought we were buds-")
+    print(" ")
+    attack4_r2e2 = input("Pull the trigger. (yes/no): ")
+    while attack4_r2e2 not in ["yes","no"]:
+        attack4_r2e2 = input("Pull the trigger. (yes/no): ")
+    if attack4_r2e2 == ("no"):
+        attack4_r2e2 = input("PULL IT. (yes/yes): ")
+        while attack4_r2e2 not in ["yes"]:
+            attack4_r2e2 = input("PULL IT. (yes/yes): ")
+    if attack4_r2e2 ==("yes"):
+        print_slow("You pull the trigger, and 4 falls into his own pool of blood.")
+        input(" ")
+    print_slow("("+name_user+")" + " I've had enough of your bullshit, you damned killer.")
+    input(" ")
+    print_slow("You turn to leave, but hear a faint whisper.")
+    input(" ")
+    print_slow("(4) You... Won't get a-away with this y-you GV-")
+    input(" ")
+    print_slow("You turn around and fire another round into 4's head, cutting off his sentence.")
+    input(" ")
+    for i in range(5):
+        print_slow("ERRRORRR")
+        print(" ")
+        print_slow("ERRRRRR")
+        print(" ")
+        print_slow("ERROR")
+    print(" ")
+    input(" ")
+    print_slow("ENDING 6: COLD BLOODED")
+    input(" ")
+    print(" ")
+    print_slow("Would you like to restart the game?")
+    restart_game = input("(yes/no): ")
+    while restart_game not in ["yes", "no"]:
+        restart_game = input("(yes/no): ")
+    if restart_game == ("yes"):
+        select_start_or_route()
+    else:
+         print_slow("Have a good day.")
+#---------------------------------------------------------------BEGIN ROUTE 2A---------------------------------------------------------------                                                     
+def route_2a_start():
+    print_slow("You split up with 4. Alone, you advance through the path where you find yourself in a bricked up dungeon.")
+    input(" ")
+    print_slow("Suddenly, patrolling GVT guards spot you and dashes in your direction.")
+    input(" ")
+    print_slow("(GVT Guard) *URG ARG GURGD!* ")
+    input(" ")
+    print_slow("("+name_user+")" + " Oh crap!")
+    input(" ")
+    print_slow("(???) ZORRO! GET EM!")
+    input(" ")
+    print_slow("A sharp gust of wind slices the group of GVT into pieces.")
+    input("")
+    print_slow("You look around, seeing a black cat standing confidently with a menacing figure looming over it.")
+    input(" ")
+    print_slow("("+name_user+")" + " A cat..?")
+    input(" ")
+    print_slow("(???) EXCUSE ME? I AM NOT A CAT!")
+    input(" ")
+    print_slow("("+name_user+")" + " Then.. What are you.?")
+    input(" ")
+    print_slow("(Morgana) My name's Morgana.. Anyways- Quickly! Lets go, this place is dangerous!")
+    input(" ")
+    print_slow("You follow Morgana, who leads you to a secret passage. Along your path, you find a corpse, holding a sophisticated looking key.")
+    print(" ")
+    key_stolen = 0
+    route2_steal_key = input("Will you take the key? (yes/no): ")
+    while  route2_steal_key not in ["yes", "no"]:
+        route2_steal_key = input("Will you take the key? (yes/no): ")
+        print(" ")
+    if route2_steal_key == ("yes"):
+        key_stolen += 1
+        route_2a_ending1()
+    else:
+        route_2a_ending2()
+
+#----------------------------------------------------------------------------------------------------------------------------BEGIN ROUTE 2b (ENDING 7) 
+def route_2b_ending1():
+    print_slow("INVALID PIN.")
+    input(" ")
+    print_slow("*BOOM* *CRACKLE*")
+    input(" ")
+    print_slow("The room around you becomes silent.")
+    input(" ")
+    print_slow("You stand there as you see blood spilling from the rubble.")
+    input(" ")
+    print_slow("("+name_user+")" + " 4..?")
+    input(" ")
+    print_slow("You were too late, 4 had been killed by the falling rubble.")
+    input(" ")
+    print_slow("("+name_user+")" + " FOOOOOOOOOOOOOOUUUUUUUUUUUUUUUUUUURRRRRRRRRRRRRRRR!!!")
+    input(" ")
+    print_slow("You yell at the top of your lungs as the moment of his death is etched into your mind.")
+    input(" ")
+    print_slow("Beside you lies 4's gun that he always carried.")
+    input(" ")
+    print_slow("Along with it, lies a note:")
+    input(" ")
+    print_slow("Infiltrate the Y-64. Kill the GVT. Direct command.")
+    input(" ")
+    print_slow("Holding the bloody note, you shove it into your pocket.")
+    input(" ")
+    print_slow("You take 4's gun and place it ontop of the rubble.")
+    input(" ")
+    print_slow("("+name_user+")" + " I swear to you... I will complete your mission.")
+    input(" ")
+    print_slow("You walk off with your shotgun, prepared to face the army.")
+    input(" ")
+    print_slow("You will not concede, you will not falter.")
+    input(" ")
+    for i in range(3):
+        print_slow("...")
+        time.sleep(1)
+        print(" ")
+    input(" ")
+    print_slow("ENDING 7: THE FINAL DUTY")
+    input(" ")
+    print(" ")
+    print_slow("Would you like to restart the game?")
+    restart_game = input("(yes/no): ")
+    while restart_game not in ["yes", "no"]:
+        restart_game = input("(yes/no): ")
+    if restart_game == ("yes"):
+        select_start_or_route()
+    else:
+         print_slow("Have a good day.")
+
+#------------------------------------------------------------------------------------------------------------------------------TRUE END 1------------------------------------
+def true_end_1():
+    print_slow("*BANG*")
+    input(" ")
+    print_slow("...")
+    input(" ")
+    print_slow("You fulfilled your duty. You killed the intruder- Joseph.")
+    input(" ")
+    print_slow("You earn the respect of the head of command of the GVT")
+    input(" ")
+    print_slow("You are promoted and command your own crew and you are given orders to destroy mankind.")
+    input(" ")
+    print_slow("Was this the result you were hoping for?")
+    input(" ")
+    for i in range(5):
+        print_slow("...")
+        input(" ")
+    print_slow("TRUE END 1: GLORY TO GVT")
+    input(" ")
+    print(" ")
+    print_slow("Would you like to restart the game?")
+    restart_game = input("(yes/no): ")
+    while restart_game not in ["yes", "no"]:
+        restart_game = input("(yes/no): ")
+    if restart_game == ("yes"):
+        select_start_or_route()
+    else:
+         print_slow("Have a good day.")
+
+#------------------------------------------------------------------------------------------------------------------------------TRUE END 2------------------------------------
+def true_end_2():
+    print_slow("You release your grip on the shotgun.")
+    input(" ")
+    print_slow("("+name_user+")" + " I can't kill you Joseph.")
+    input(" ")
+    print_slow(" Joseph looks at you with a mix of confusion and anger.")
+    input(" ")
+    print_slow("(Joseph) Why though..? Aren't you a GVT? Don't you have a mission to fulfill?..")
+    input(" ")
+    print_slow("("+name_user+")" + " I can't kill you... You're a friend.")
+    input(" ")
+    print_slow("(Joseph) ...")
+    input(" ")
+    print_slow("(Joseph) JUST DO IT!")
+    input(" ")
+    print_slow("("+name_user+")" + " NO!")
+    input(" ")
+    print_slow("You toss the shotgun aside.")
+    input(" ")
+    print_slow("You pull him up by his collar.")
+    input(" ")
+    print_slow("("+name_user+")" + " Get up, WE still have a mission to fulfill don't we?")
+    input(" ")
+    print_slow("(Joseph) ...")
+    input(" ")
+    print_slow("(Joseph) Yeah... Yeah we do.")
+    input(" ")
+    print_slow("You both walk out of the rubble, with a new goal in mind.")
+    input(" ")
+    print_slow("To kill...")
+    input(" ")
+    print_slow("The GVT.")
+    input(" ")
+    for i in range(4):
+        print_slow("...")
+        print(" ")
+    time.sleep(1.2)
+    print_slow("...")
+    input(" ")
+    print_slow("TRUE END 2: GLORY TO MANKIND.")
+    input(" ")
+    print(" ")
+    print_slow("Would you like to restart the game?")
+    restart_game = input("(yes/no): ")
+    while restart_game not in ["yes", "no"]:
+        restart_game = input("(yes/no): ")
+    if restart_game == ("yes"):
+        select_start_or_route()
+    else:
+         print_slow("Have a good day.")
+
+#----------------------------------------------------------------------------------------------------------------------------BEGIN ROUTE 2b (ENDING 8) 
+def route_2b_ending2():
+    print_slow("*BZZZT* The device activates, time had stopped.")
+    input(" ")
+    print_slow("("+name_user+")" + " What the hell just happened- Whatever, I gotta save 4!")
+    input(" ")
+    print_slow("You rush towards 4, dragging him to safety.")
+    input(" ")
+    print_slow("Moments later, time resumes and the large pillar slams inches from where you stood.")
+    input(" ")
+    print_slow("(4) Huh?, hey how did that pillar get there-")
+    input(" ")
+    print_slow("("+name_user+")" + " You just almost got crushed flat!")
+    input(" ")
+    print_slow("(4) Then how did you- Did you use the time stopping device?")
+    input(" ")
+    print_slow("(4) Well thanks for saving my ass, you sure are smart for figuring out the code that fast...")
+    input(" ")
+    print_slow("(4) Ya kinda remind me of my old friend Caesar...")
+    input(" ")
+    print_slow("("+name_user+")" + " Huh? Caesar?")
+    input(" ")
+    print_slow("(4) Crap, I spoke too much..")
+    input(" ")
+    print_slow("You notice that 4 seems bothered by something.")
+    input(" ")
+    print_slow("("+name_user+")" + " Is something wrong?")
+    input(" ")
+    print_slow("(4) Ah man... I can't keep up this facade..")
+    input(" ")
+    print_slow("(4) I'm not who you think I am.")
+    input(" ")
+    print_slow("(4) ... Truth is, I've been lyin' to ya this whole time.")
+    input(" ")
+    print_slow("(4) I brainwashed you, used you, in reality, you're actually part of the GVT.")
+    input(" ")
+    print_slow("("+name_user+")" + " Huh..?")
+    input(" ")
+    print_slow("Suddenly something strikes you, and you remember your true mission.")
+    input(" ")
+    print_slow("Your 'REAL' commander had ordered you to kill the intruder- To kill 4.")
+    input(" ")
+    print_slow("(Joseph) My name isn't 4, my real name is Joseph, I was ordered to infiltrate the Y-64 and neutralize the GVT.")
+    input(" ")
+    print_slow("(Joseph) But I got caught, and I had to improvise, I deceived and used you for my own benefit.")
+    input(" ")
+    print_slow("(Joseph) Kill me, I've already failed my mission.")
+    input(" ")
+    print_slow("Joseph pulls out a shotgun and hands it to you, pointing it at his own head.")
+    input(" ")
+    print_slow("...")
+    input(" ")
+    final_trueEndingkill_spare = input("Will you KILL or SPARE him? (kill/spare): ")
+    while  final_trueEndingkill_spare not in ["kill", "spare"]:
+        final_trueEndingkill_spare = input("You can only make these decisions. (kill/spare): ")
+        print(" ")
+    if final_trueEndingkill_spare == ("kill"):
+        true_end_1()
+    else:
+        true_end_2()
+
+#---------------------------------------------------------------BEGIN ROUTE 2B---------------------------------------------------------------    
+def route_2b_start():
+    print_slow("You decide to stick together with 4.")
+    input(" ")
+    print_slow("(4) Heh, so ya wanted to stay with me huh?")
+    input(" ")
+    print_slow("("+name_user+")" + " Yeah, I guess so.")
+    input(" ")
+    print_slow("You follow 4 as you continue down the pathway.")
+    input(" ")
+    print_slow("You walk and walk and walk until you arrive at a large atrium.")
+    input(" ")
+    print_slow("(4) 239...")
+    input(" ")
+    print_slow("("+name_user+")" + " Huh?")
+    input(" ")
+    print_slow("(4) Ah nevermind, let's keep moving.")
+    input(" ")
+    print_slow("*BOOM* *BOOOOM* The walls around you come crashing down and 4 trips over a rock.")
+    input(" ")
+    print_slow("Infront of you a keypad falls from 4's pocket.")
+    input(" ")
+    print_slow("a large pillar topples over, slowly falling straight towards 4.")
+    input(" ")
+    print_slow("(4) Ah crap my leg's stuck...")
+    input(" ")
+    print_slow("4 mutters unbeknownst of the danger hes in.")
+    input(" ")
+    print_slow("("+name_user+")" + " DAMNIT I GOTTA DO SOMETHING FAST!")
+    input(" ")
+    print_slow("You remember the keypad 4 dropped and quickly grasped it.")
+    print(" ")
+    keypad_save4end = input("Insert the PIN: ")
+    attempts = 1            #This is a value that counts the amount of attemps the user has 
+    while keypad_save4end not in ["239"] and attempts > 0:      #This checks if the user still has any attemps and also if they answered 239
+        keypad_save4end = input("INVALID PIN, (1 TRY REMAINING)")
+        attempts -= 1       #This subtracts the attemps the user has remaining, in this case they lose all and ending 1 occurs.
+    if keypad_save4end == "239":
+        route_2b_ending2()
+    else:
+        route_2b_ending1()
+
+#---------------------------------------------------------------ROUTE 2----------------------------------------------------------   
+def route_2start():
+    print_slow("The pin pad blows up and you can no longer access it.")
+    input(" ")
+    print_slow("(4) Dammit you idiot that was a joke...")
+    input(" ")
+    print_slow("Suddenly, the wall behind you slides open revealing a secret path.")
+    input(" ")
+    print_slow("(4) Hey look! A path opened up, why don't we go investigate it?")
+    input(" ")
+    print_slow("("+name_user+")" + " This seems suspicious...")
+    input(" ")
+    print_slow("(4) *sigh* Come on, it's not like we have any other option now.")
+    input(" ")
+    print_slow("("+name_user+")" + " Fine..")
+    input(" ")
+    print_slow("You enter the suspicious path, but find it branches off into two.")
+    input(" ")
+    print_slow("(4) Aw man! Looks like theres no other choice!")
+    print(" ")
+    second_route_first_choice = input("Should we split up? (yes/no): ")
+    while  second_route_first_choice not in ["yes", "no"]:
+        second_route_first_choice = input("Split up? (yes/no): ")
+        print(" ")
+    if second_route_first_choice == ("yes"):
+        route_2a_start()
+    else:
+        route_2b_start()
+
+#-----------------------------------------------------------------------------------------------------------------------------BEGIN ROUTE 1a (ENDING 1)
+def route_1a_ending1():
+    print_slow("(4) HIT THE BUTTON! *BOOM* *KRURK* ACK!")
+    input(" ")
+    print_slow("The landship blows into giant pieces flying across the facility.")
+    input(" ")
+    print_slow("(4) WE DID IT! THAT BASTARD IS SCRAP METAL NOW!")
+    input(" ")
+    print_slow("You and 4 retreat from the facility, 4 stops right at the entrance.")
+    input(" ")
+    print_slow("(4) Looks like thats that, we finished the mission.")
+    input(" ")
+    print_slow("You turn around to see 4 unholster his rifle and point it at you.")
+    input(" ")
+    print_slow("(4) This is the end of the line for ya, sorry for lying to you, my name isn't actually 4 and-")
+    input(" ")
+    print_slow("(4?) -You're also a GVT yknow...")
+    input(" ")
+    print_slow("*BANG* You hear the sound of the bullet leaving the chamber, whislting straight towards your head.")
+    input(" ")
+    for i in range(6):
+        print_slow("ERROR")
+        print(" ")
+    time.sleep(2)
+    input("...")
+    for i in range(2):
+        print_slow("ERROR")
+        print(" ")
+    input(" ")
+    print(" ")
+    print_slow("ENDING 1: DEAD END.")
+    input(" ")
+    print(" ")
+    print_slow("Would you like to restart the game?")
+    restart_game = input("(yes/no): ")
+    while restart_game not in ["yes", "no"]:
+        restart_game = input("(yes/no): ")
+    if restart_game == ("yes"):
+        select_start_or_route()
+    else:
+         print_slow("Have a good day.")
+
+#----------------------------------------------------------------------------------------------------------------------------BEGIN ROUTE 1a (ENDING 2)
+def route_1a_ending2():
+    print_slow("*BOOM* *BOOM* *BOOM*")
+    input(" ")
+    print_slow("The VK-602 blows into giant pieces, a few moments later you realize what you've done.")
+    input(" ")
+    print_slow("The facility is now in ruins, and you killed 4, 4 no reason.")
+    input("")
+    print_slow("Now what? What do you think of what you've just done?")
+    print(" ")
+    sentimentE2 = input("Input your thoughts with one word: ")
+    print_slow("So you feel '"+sentimentE2+"' huh? You just killed your 'teammate'.")
+    input(" ")
+    print_slow("You look around and see that your surrounded by the GVT.")
+    input(" ")
+    print_slow("You surrender and are taken away, locked inside a mental training facility.")
+    input(" ")
+    print_slow("Time passes as you slowly rot away.")
+    input(" ")
+    print_slow("("+name_user+") *sigh* looks like I'll be here for quite a while.")
+    input(" ")
+    print_slow("(GVT Commander) Hey nitwit, get up, we need you to do a job.")
+    input(" ")
+    print_slow("With no other purpose you agree and you live the rest of your life in servitude to the GVT.")
+    input(" ")
+    print_slow("...Which you had already been doing before this whole mess.")
+    for i in range(5):
+        print_slow("...")
+        input(" ")
+    print_slow("ENDING 2: SERVITUDE.")
+    input(" ")
+    print(" ")
+    print_slow("Would you like to restart the game?")
+    restart_game = input("(yes/no): ")
+    while restart_game not in ["yes", "no"]:
+        restart_game = input("(yes/no): ")
+    if restart_game == ("yes"):
+        select_start_or_route()
+    else:
+         print_slow("Have a good day.")
+
+#---------------------------------------------------------------BEGIN ROUTE 1A---------------------------------------------------------------
+def route_1a_start():
+    print_slow("You return to the terminal and insert the keycard into the slot.") 
+    input(" ")
+    print_slow("(Terminal) *Beep* Access granted, disengaging explosive devices.")   
+    input(" ")
+    print_slow("(4) Looks like thats finished, lets head down that elevator!")
+    input(" ")          
+    print_slow("("+name_user+") Since when was there an elevator-")
+    input(" ")       
+    print_slow("You enter the elevator along with 4 and as usual, the elevator drops straight down.")   
+    input(" ") 
+    print_slow("(4) Welp, looks like thats the target. This is the entrance to the VK-602, right through this door.")
+    input(" ")
+    print_slow("(4) Alright, lets get this over with. Heres the detonator, i'm gonna go toss this C4 into the engine compartment.")
+    input(" ")
+    print_slow("(4) I have no clue where it is but I'll find it... Probably.")
+    input(" ")
+    print_slow("(4) Slam it when I tell ya alright?! I'll need time to get out of there.. Welp see ya!")
+    input(" ")
+    print_slow("...")
+    time.sleep(2)
+    print(" ")
+    kill_4r1 = input("Detonate device (yes/no): ")
+    while kill_4r1 not in ["yes","no"]:
+        kill_4r1 = input("Detonate device (yes/no)")
+    if kill_4r1 == ("yes"):                                 
+        route_1a_ending2()
+    else: 
+        route_1a_ending1()
+
+#-----------------------------------------------------------------------------------------------------------------------------BEGIN ROUTE 1b (ENDING 3)
+def route_1b_ending1():                    
+    print_slow("(4) Heh, ya wanna keep fighting huh? I like your spirit.")
+    input(" ")
+    print_slow("("+name_user+") *sigh* we don't have much a choice do we?.")
+    input(" ")
+    print_slow("You and 4 descend to the main floor right above the VK-602.")
+    input(" ")
+    print_slow("You see the army of GVT soldiers, all armed to the teeth, and eyeing you with hostility.")
+    input(" ")
+    print_slow("(4) You ready for this? Well you better be.")
+    input(" ")
+    print_slow("And so begins the onslaught of enemies.")
+    input(" ")
+    GVTambush1000 = 1000
+    GVTambkill1000_count = 0
+    while GVTambkill1000_count < 20:   #This while statement will keep looping until the player has killed 6 enemies
+        GVTambkill1000 = input("Press enter to fire:")
+        if GVTambkill1000 == (""):    #This verifies if the input was blank (enter)
+            GVTambush1000 -= 2        #This will kill  2 enemies each time the player presses enter
+            print("You killed 2 GVT " + str(GVTambush1000) + " remaining.")
+            GVTambkill1000_count += 1 
+        if GVTambush1000 <= 0:        #This will end the loop once  all enemies have been killed
+            break
+    print_slow("...")
+    input(" ")
+    time.sleep(2)
+    print_slow("(4) Theres no end to them... We're running low on munitions.")
+    input(" ")
+    print_slow("(4) WATCH OUT! ROCKET INCOMING!")
+    input(" ")
+    print_slow("The rocket hits the ground, and the explosion sends you and 4 flying.")
+    input(" ")
+    print_slow("(4) *groan* Ah crap we're screwed...")
+    input(" ")
+    print_slow("You look around and you are completely surrounded from all sides.")
+    input(" ")
+    print_slow("(4) *sigh* I guess thats that heh.")
+    input(" ")
+    for i in range(3):
+        print_slow("...")
+        input(" ")
+    print_slow("You were both executed by the GVT and left hanging at their entrance.")
+    input(" ")
+    for i in range(5):
+        print_slow("...")
+        print(" ")
+    input(" ")
+    print_slow("ENDING 3: THE ONSLAUGHT.")
+    input(" ")
+    print(" ")
+    print_slow("Would you like to restart the game?")
+    restart_game = input("(yes/no): ")
+    while restart_game not in ["yes", "no"]:
+        restart_game = input("(yes/no): ")
+    if restart_game == ("yes"):
+        select_start_or_route()
+    else:
+         print_slow("Have a good day.")
+
+#----------------------------------------------------------------------------------------------------------------------------BEGIN ROUTE 1b (ENDING 4)
+def route_1b_ending2():
+    print_slow("(4) You wanna run? Fine, lets get outta here ASAP then.")
+    input(" ")
+    print_slow("You and 4 sprint down the hallway, nearing the entrance.")
+    input(" ")
+    print_slow("(4)  We're almost there, just a little bit more!-")
+    input(" ")
+    print_slow("(4) -Hey is that a cat?")
+    input(" ")
+    print_slow("4 gets distracted and loses his footing.")
+    input(" ")
+    print_slow("(4) Uh oh... *BOOM*")
+    input(" ")
+    print_slow("("+name_user+") GET UP MAN LETS GO!-")
+    input(" ")
+    print_slow("You turn around to see a disfigured 4 lying in a pool of blood.")
+    input(" ")
+    print_slow("("+name_user+") Hell it's too late..")
+    input(" ")
+    for i in range(3):
+        print_slow("...")
+        input(" ")
+    print_slow("You successfully escape the GVT facility, now you wander aimlessly in the freezing desert wondering what your purpose was in the first place.")
+    input(" ")
+    print_slow("("+name_user+") What am I even doing anymore?")
+    input(" ")
+    for i in range(5):
+        print_slow("...")
+        print(" ")
+    input(" ")
+    print_slow("ENDING 4: THE LOST SOUL.")
+    input(" ")
+    print(" ")
+    print_slow("Would you like to restart the game?")
+    restart_game = input("(yes/no): ")
+    while restart_game not in ["yes", "no"]:
+        restart_game = input("(yes/no): ")
+    if restart_game == ("yes"):
+        select_start_or_route()
+    else:
+         print_slow("Have a good day.")
+
+#---------------------------------------------------------------BEGIN ROUTE 1B---------------------------------------------------------------
+def route_1b_start():
+    print_slow("You do not go to the terminal, instead you find yourself attracted to a trapdoor in the floor.")
+    input(" ")
+    print_slow("(4) Huh? Where are ya goin' "+name_user+"?")
+    input(" ")
+    print_slow("You ignore 4 and jump down the trapdoor, finding yourself in a cramped ventilation shaft.")
+    input(" ")
+    print_slow("You start to crawl through the shaft, trying to find a way out.")
+    input(" ")
+    print_slow("(4) HEY WAIT UP!!!")
+    input(" ")
+    print_slow("Ignoring 4, you drop down into a room filled with pipes and machinery.")
+    input(" ")
+    print_slow("(4) YOU'RE GONNA GET YOURSELF KILLED!!!")
+    input(" ")
+    print_slow("You continue to analyse your surroundings when suddenly- you kicked a wire.")       #You can make ventilation path split into two input( when you need) seprate ending secret?, if you have time.
+    input(" ")
+    print_slow("An alarm starts blaring as the hallways outside the room start to fill with guards.")
+    input(" ")
+    print_slow("(4) YOUR GONNA GET US KILLED YOU IDIOT WHY DIDN'T YOU WAIT!!")
+    input(" ")
+    print_slow("(4) ...")
+    input(" ")
+    print_slow("(4) Whatever, take this gun, we'll start firing once they bust that door down, got it?")
+    input(" ")
+    print_slow("The door breaks down and you ready your firearm.")
+    input(" ")
+    #These values show the amount of enemies that need to be killed
+    GVTambush10 = 12
+    GVTambkill10_count = 0
+    while GVTambkill10_count < 6:   #This while statement will keep looping until the player has killed 6 enemies
+        GVTambkill10 = input("Press enter to fire:")
+        if GVTambkill10 == (""):    #This verifies if the input was blank (enter)
+            GVTambush10 -= 2        #This will kill  2 enemies each time the player presses enter
+            print("You killed 2 GVT " + str(GVTambush10) + " remaining.")
+            GVTambkill10_count += 1 
+        if GVTambush10 <= 0:        #This will end the loop once  all enemies have been killed
+            break
+    print_slow("(4) They're all dead... Great now we just alerted the whole facility that we're here.")
+    input(" ")
+    print_slow("(4) What now, we gonna clear out this whole facility or get the hell out?")
+    print(" ")
+    fight_or_flight = input("(fight/escape): ")
+    while fight_or_flight not in ["fight","escape"]:
+        fight_or_flight = input("(fight/escape): ")
+    if fight_or_flight == "fight":
+        route_1b_ending1()
+    else:
+        route_1b_ending2()
+
+#---------------------------------------------------------------ROUTE 1---------------------------------------------------------------
+def route_1start():
+    print_slow("The keypad clicks and the door infront of you swings open.")
+    input(" ")
+    print_slow("You step through the doorway and find yourself in a dimly lit room.")
+    input(" ")
+    print_slow("(4) GOOD JOB! We found the security terminal- Oh crap theres a bunch of GVT here!")
+    input(" ")
+    print_slow("(GVT Grunt1) *URG ARG GURGD!* ")
+    input(" ")
+    print_slow("(GVT Grunt2) *KURG ARUR JUUG!* ")
+    input(" ")
+    print_slow("4 pulls out an assault rifle and starts blasting the GVT.")
+    input(" ")
+    print_slow("(4) Phew.. Looks like that's the last of em, anyhow, we gotta find a way to disengage those explosive tripwires scattered around the facility.")
+    input(" ")
+    print_slow("(4) *looks around* Ah, I see a terminal over there, maybe..")
+    input(" ")
+    print_slow("(4) This looks like the terminal we need, howeeeeever, it looks like we need some sort of keycard...")
+    keycard_access = False
+    input(" ")
+    print_slow("(4) Well let's just try this card I found on the floor earlier...")
+    input(" ")
+    print_slow("(Terminal) *beep beep*  Access Denied.")
+    input(" ")
+    print_slow("(4) *sigh* Alright, let's try to find another keycard... Why don't we check out those corpses over there?")
+    input(" ")
+    print_slow("(4) *rummages through corpses* Ah, looks like we found a bloody card!")
+    input(" ")
+    keycard_access = True
+    if keycard_access ==  True:
+        print_slow("You aquired a: SECURITY KEYCARD!")
+        input(" ")
+    print_slow("("+name_user+")"+" What..?")
+    input(" ")
+    print_slow("You find a hidden trapdoor at the corner of the room.")
+    input(" ")
+    print_slow("You now have access to the terminal.")
+    print(" ")
+    first_route_first_choice = input("Would you like to return? (yes/no): ")
+    while first_route_first_choice not in ["yes", "no"]:
+        print_slow("You now have access to the terminal.")
+        first_route_first_choice = input("Would you like to return? (yes/no)")
+    if first_route_first_choice == ("yes"):
+        route_1a_start()
+    else:
+        route_1b_start()
+
+#---------------------------------------------------------------PROLOGUE-------------------------------------------------------------------------- 
+def introduction_start():
+    print_slow("(???) " + name_user + "... You're just who we need.")
+    input(" ")
+    print_slow("(4) Ah whoops, forgot to introduce myself, the name's... 4, nice to meet you.")
+    input(" ")
+    print_slow("(4) You're most likely wondering what we're doing in this plain white room.")
+    input(" ")
+    print_slow("(4) We're currently on the first floor of the Y-64, a research facility built by the GVT, they're the ones who built that VK-602 thingy.")
+    input(" ")
+    print_slow("("+name_user+")" + " So what am I doing here?")
+    input(" ")
+    print_slow("(4) Great question, in a moment we'll be descending to the 17th floor, straight to the security terminal, so you should probably brace yourself.")
+    input(" ")
+    print_slow("("+name_user+")"+" Huh..?")
+    input(" ")
+    print_slow("A moment later, the floor beneath your feet disappears dropping you down straight into an abyss.")
+    input(" ")
+    print_slow("You open your eyes to find yourself in yet another white room full of crates with a keypad.")
+    input(" ")
+    print_slow("(4) Alright, we're here, now it's time to get to work.")
+    input(" ")
+    print_slow("(4) There appears to be a crate full of papers and a cabinet full of papers.")
+    print(" ")
+    #Not an important choice, this input chooses which path the user will inspect first, leads to the same place.
+    inspect_3 = input("What should we inspect first? (crate/cabinet): ")
+    #This line of code with while repeats the question if the afformentioned names were not  inputted by checking if the input includes the word.
+    while inspect_3 not in ["crate", "cabinet"]:
+        inspect_3 = input("(4) Uh didn't quite get that... What should we inspect first? (crate/cabinet): ")
+    if inspect_3  == ("crate"):
+        print_slow("(4) Oookay, let's take a look at the crate full of papers.")
+        input(" ")
+        print_slow("(4) There's a bunch of papers in here, hey this one looks interesting, it shows a big 6 _ _, ya think it's important? Well whatever, let's go and check out the cabinet.")
+        input(" ")
+        print_slow("(4) This cabinet sure looks dusty, oh! There appears to be a note that reads: _ 0 _, ain't this note a bit suspicious?")
+        input(" ")
+    elif inspect_3 == ("cabinet"):
+        print_slow("(4) Alright, let's take a look at the cabinet full of papers.")
+        input(" ")
+        print_slow("(4) This sure is a dusty cabinet, oh look! There appears to be a note that reads: _ 0 _,  aint't this note a bit suspicious? Well whatever, onto the crate.")
+        input(" ")
+        print_slow("(4) There's a bunch of papers in here, and there appears to be a sheet of paper with a 6 _ _, might be useful to keep that in mind.")
+        input(" ")
+    print_slow("(4) Well, that appears to be everything... Nevermind! Theres a box over here in the corner.")
+    input(" ")
+    print_slow("(4) Looks like there's two model ships in here, well whatever, that should be all the clues. Let's break open that keypad and get to that terminal!")
+    input(" ")
+    print_slow("(4) Alright, let's get to work on that keypad, I'm sure you can figure this one out... Imagine if it was 206 hah!")
+    print(" ")
+    #This choice of input puts you into ROUTE 1(602) or ROUTE 2(206)
+    first_route_choice = input("Please insert the PIN. (602/206): ")
+    #This line of code with while repeats the question if the afformentioned names were not  inputted by checking if the input includes the word.
+    while  first_route_choice not in ["602", "206"]:
+        first_route_choice = input("INVALID. Please insert the PIN. (602/206): ")
+        print(" ")
+    first_route_choice = int(first_route_choice)    #reads variable as integer
+    if first_route_choice == 602:
+        route_1start()
+    else:
+        route_2start()
+
+#-------------------------------------------------------------- ROUTE/ENDING SELECTOR----------------------------------------------------------------------------
+def ending_start_selector():
+    print_slow("Input the ending to start:")
+    print(" ")
+    print_slow("route_1a_ending1 (ENDING 1)")
+    print(" ")
+    print_slow("route_1a_ending2 (ENDING 2)")
+    print(" ")
+    print_slow("route_1b_ending1 (ENDING 3)")
+    print(" ")
+    print_slow("route_1b_ending2 (ENDING 4)")
+    print(" ")
+    print_slow("route_2a_ending1 (ENDING 5)")
+    print(" ")
+    print_slow("route_2a_ending2 (ENDING 6)")
+    print(" ")
+    print_slow("route_2b_ending1 (ENDING 7)")
+    print(" ")
+    print_slow("route_2b_ending2 (ENDING 8 - TRUE END ROUTE)")
+    print(" ")
+    print_slow("true_end_1 (TRUE END 1)")
+    print(" ")
+    print_slow("true_end_2 (TRUE END 2)")
+    print(" ")
+    ending_chosen = input("Select: ")       #Makes a list of all ending and asks user to input which to run
+    while ending_chosen not in ["route_1a_ending1","route_1a_ending2","route_1b_ending1","route_1b_ending2","route_2a_ending1","route_2a_ending2","route_2b_ending1","route_2b_ending2","true_end_1","true_end_2"]:
+        ending_chosen = input("Select: ")
+        print(" ")
+    if ending_chosen == ("route_1a_ending1"):
+        print(" ")
+        route_1a_ending1()
+    elif ending_chosen == ("route_1a_ending2"):
+        print(" ")
+        route_1a_ending2()
+    elif ending_chosen == ("route_1b_ending1"):
+        print(" ")
+        route_1b_ending1()
+    elif ending_chosen == ("route_1b_ending2"):
+        print(" ")
+        route_1b_ending2()
+    elif ending_chosen == ("route_2a_ending1"):
+        print(" ")
+        route_2a_ending1()
+    elif ending_chosen == ("route_2a_ending2"):
+        print(" ")
+        route_2a_ending2()
+    elif ending_chosen == ("route_2b_ending1"):
+        print(" ")
+        route_2b_ending1()
+    elif ending_chosen == ("route_2b_ending2"):
+        print(" ")
+        route_2b_ending2()
+    elif ending_chosen == ("true_end_1"):
+        print(" ")
+        true_end_1()
+    elif ending_chosen == ("true_end_2"):
+        print(" ")
+        true_end_2()
+    
+def route_start_selector(): 
+    print_slow("Input the route to start:")
+    print(" ")
+    print_slow("route_1start")
+    print(" ")
+    print_slow("route_1a_start")
+    print(" ")
+    print_slow("route_1b_start")
+    print(" ")
+    print_slow("route_2start")
+    print(" ")
+    print_slow("route_2a_start")
+    print(" ")
+    print_slow("route_2b_start")
+    print(" ")
+    route_chosen = input("Select: ")        #Makes a list of all pre-routes that asks the user to input to begin
+    while route_chosen not in ["route_1start","route_1a_start","route_1b_start","route_2start","route_2a_start","route_2b_start"]:
+        route_chosen = input("Select: ")
+        print(" ")
+    if route_chosen == ("route_1start"):
+        print(" ")
+        route_1start()
+    elif route_chosen == ("route_1a_start"):
+        print(" ")
+        route_1a_start()
+    elif route_chosen == ("route_1b_start"):
+        print(" ")
+        route_1b_start()
+    elif route_chosen == ("route_2start"):
+        print(" ")
+        route_2start()
+    elif route_chosen == ("route_2a_start"):
+        print(" ")
+        route_2a_start()
+    elif route_chosen == ("route_2b_start"):
+        print(" ")
+        route_2b_start()
+def route_or_ending_select():
+    print_slow("Would you like to select a route or ending?")
+    print(" ")
+    route_or_end_menu = input("route/ending: ")
+    while route_or_end_menu not in ["route","ending"]:
+        route_or_end_menu = input("route/ending")
+        print(" ")
+    if route_or_end_menu == ("route"):
+        route_start_selector()
+    else:
+        ending_start_selector()
+#SELF INTRO- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+#THIS IS THE STARTING POINT OF THE GAME, VIEW ROUTE ABOVE (introduction_start) FOR THE PROLOGUE 
+#(The rest of the "routes" will be declared as functions, thus endings will be at the top, whilst the intro/start is at the bottom.)
+def prologue_namecheck():
+    print_slow("(???) Ah, you've finally woken up, we don't have time so I'll keep it short, our crew is currently being terrorized by something called the VK-602, a massive underground landship with stupid EMP capabilities. Anyways, we need your help to destroy it.")
+    input(" ")
+    #USER NAME (name_user)
+    print_slow("(???) You're "+name_user+" correct? Great.")
+    input(" ")
+    introduction_start()
+
+def select_start_or_route():
+    print_slow("Would you like to start from the beginning or select a route?")
+    print(" ")
+    start_route_selector = input("(start/route): ")
+    while start_route_selector not in ["start","route"]:
+        start_route_selector = input("(start/route)")
+        print(" ")
+    if start_route_selector == ("start"):
+        prologue_namecheck()
+    else:
+        route_or_ending_select()
+select_start_or_route()                    #If user restarts game from ending there will be no more name rechecks.
+#If you want, you can make a route selector choice like at the start where it lists all of the routes
+#Then you can put an input statement and whatever user input, the route will start
+#simply a quality of life improvement.
