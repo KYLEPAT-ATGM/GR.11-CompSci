@@ -1,0 +1,10 @@
+def square(number):
+    """
+    Calculates the square of a number
+    Parameter: number (int/float) to be squared
+    Returns: The square of the number
+    """
+    return number * number
+square(5)
+print("The function 'square':")
+print(square.__doc__)
