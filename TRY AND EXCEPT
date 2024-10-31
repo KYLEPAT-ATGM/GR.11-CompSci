@@ -1,0 +1,7 @@
+while True:
+    try:
+        num1 = int(input("ENTER A NUMBER TO BE MULTIPLIED BY 10: "))
+        break 
+    except ValueError:
+        print("Invalid input. Please enter a valid number.")
+print("The number is: ", num1 * 10)
